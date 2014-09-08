@@ -91,7 +91,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     return obj;
 }
 
-// Stones: Return average network hashes per second based on last number of blocks.
+// Shares: Return average network hashes per second based on last number of blocks.
 Value GetNetworkHashPS(int lookup) {
     if (pindexBest == NULL)
         return 0;

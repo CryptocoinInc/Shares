@@ -1089,16 +1089,16 @@ void BitcoinGUI::updateStakingIcon()
         labelStakingIcon->setToolTip(tr("Not staking because wallet is locked"));
       else
 		{
-	  	uint64 nMinWeight = 0, nMaxWeight = 0, nWeight = 0, nBelowWeight = 0, nStones = 0;
+	  	uint64 nMinWeight = 0, nMaxWeight = 0, nWeight = 0, nBelowWeight = 0, nShares = 0;
 		nBelowWeight=pwalletMain->GetStakeWeight(*pwalletMain, STAKE_BELOWMIN);
 		nWeight=pwalletMain->GetStakeWeight(*pwalletMain, STAKE_NORMAL);
 		if (!nWeight)
             labelStakingIcon->setToolTip(tr("Not staking because you don't have mature coins"));
           else
 			{
-				nStones=nWeight/730;
+				nShares=nWeight/730;
 				labelStakingIcon->setPixmap(QIcon(":/icons/staking_on").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-				labelStakingIcon->setToolTip(tr("Minting.\nBelowWeight %1\nMintWeight %2\nYou are trying to mint %3 Stones").arg(nBelowWeight).arg(nWeight).arg(nStones));
+				labelStakingIcon->setToolTip(tr("Minting.\nBelowWeight %1\nMintWeight %2\nYou are trying to mint %3 Shares").arg(nBelowWeight).arg(nWeight).arg(nShares));
 			}
 		}
 }

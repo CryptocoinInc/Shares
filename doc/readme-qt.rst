@@ -1,6 +1,6 @@
-Philosopher Stones BETA
+Philosopher Shares BETA
 
-Copyright (c) 2013-2014 Philosopher Stones Developers
+Copyright (c) 2013-2014 Philosopher Shares Developers
 Copyright (c) 2013 NovaCoin Developers
 Copyright (c) 2011-2013 PPCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
@@ -9,7 +9,7 @@ This product includes software developed by the OpenSSL Project for use in
 the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
 cryptographic software written by Eric Young (eay@cryptsoft.com).
 
-Philosopher Stones is a free open source project derived from PPCoin/NovaCoin, with
+Philosopher Shares is a free open source project derived from PPCoin/NovaCoin, with
 the goal of providing a long-term energy-efficient crypto-currency.
 Built on the foundation of Bitcoin, innovations such as proof-of-stake
 help further advance the field of crypto-currency.
