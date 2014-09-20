@@ -92,7 +92,8 @@ LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp \
     src/qt/ccexbox.cpp \ 
     src/qt/chatbox.cpp \
-    src/qt/community.cpp
+    src/qt/community.cpp \
+    src/qt/ledger.cpp
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
     genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a
@@ -216,7 +217,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/clientversion.h \
     src/qt/ccexbox.h \
     src/qt/chatbox.h \
-    src/qt/community.h
+    src/qt/community.h \
+    src/qt/ledger.h
 
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
@@ -303,7 +305,8 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/ccexbox.ui \
     src/qt/forms/chatbox.ui \
-    src/qt/forms/community.ui
+    src/qt/forms/community.ui \
+    src/qt/forms/ledger.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h

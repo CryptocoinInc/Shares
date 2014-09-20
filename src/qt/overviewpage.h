@@ -5,6 +5,7 @@
 #include "ccexbox.h"
 #include "chatbox.h"
 #include "community.h"
+#include "ledger.h"
 
 QT_BEGIN_NAMESPACE
 class QModelIndex;
@@ -43,6 +44,7 @@ private:
     CCexBox *ccexbox;
     ChatBox *chatbox;
     Community *community;
+    Ledger *ledger;
     ClientModel *clientModel;
     WalletModel *walletModel;
     qint64 currentBalance;
@@ -60,6 +62,7 @@ private slots:
     void on_commandLinkButton_clicked();
     void on_commandLinkButton_2_clicked();
     void on_commandLinkButton_3_clicked();
+    void on_commandLinkButton_4_clicked();
 };
 
 #endif // OVERVIEWPAGE_H

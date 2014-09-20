@@ -247,3 +247,9 @@ void OverviewPage::on_commandLinkButton_3_clicked()
     community =new Community(this);
     community->show();
 }
+
+void OverviewPage::on_commandLinkButton_4_clicked()
+{
+    ledger =new Ledger(this);
+    ledger->show();
+}

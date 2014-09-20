@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CCexBox</class>
- <widget class="QDialog" name="CCexBox">
+ <class>Ledger</class>
+ <widget class="QDialog" name="Ledger">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1300</width>
-    <height>720</height>
+    <width>859</width>
+    <height>531</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>C-Cex Trade Engine</string>
+   <string>Shares Public Ledger</string>
   </property>
   <widget class="QWebView" name="webView">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>1281</width>
-     <height>701</height>
+     <width>841</width>
+     <height>511</height>
     </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="url">
     <url>
